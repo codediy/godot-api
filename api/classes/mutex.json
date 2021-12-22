@@ -1,0 +1,1 @@
+{"name":"Mutex","parent":"Reference","comment":"A synchronization mutex (mutual exclusion).","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"lock","fun":" void lock()"},{"name":"try_lock","fun":" int try_lock()"},{"name":"unlock","fun":" void unlock()"}],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeOuterProduct","parent":"VisualShaderNode","comment":"Calculates an outer product of two vectors within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

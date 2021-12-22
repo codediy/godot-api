@@ -1,0 +1,1 @@
+{"name":"float","parent":"Top","comment":"Float built-in type.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"float","fun":" float float(bool from)"},{"name":"float","fun":" float float(int from)"},{"name":"float","fun":" float float(String from)"}],"signals":[]}

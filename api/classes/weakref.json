@@ -1,0 +1,1 @@
+{"name":"WeakRef","parent":"Reference","comment":"Holds an [Object], but does not contribute to the reference count if the object is a reference.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"get_ref","fun":"const Variant get_ref()"}],"signals":[]}

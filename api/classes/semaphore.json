@@ -1,0 +1,1 @@
+{"name":"Semaphore","parent":"Reference","comment":"A synchronization semaphore.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"post","fun":" int post()"},{"name":"wait","fun":" int wait()"}],"signals":[]}

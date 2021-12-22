@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeScalarConstant","parent":"VisualShaderNode","comment":"","des":"","const":[],"enums":[],"props":[{"name":"constant","prop":"float constant  = 0.0","setget":"true"}],"setters":["set_constant(float value)"],"getters":["float get_constant()"],"methods":[],"signals":[]}

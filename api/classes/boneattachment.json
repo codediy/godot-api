@@ -1,0 +1,1 @@
+{"name":"BoneAttachment","parent":"Spatial","comment":"A node that will attach to a bone.","des":"","const":[],"enums":[],"props":[{"name":"bone_name","prop":"String bone_name  = &quot;&quot;","setget":"true"}],"setters":["set_bone_name(String value)"],"getters":["String get_bone_name()"],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"Listener2D","parent":"Node2D","comment":"Overrides the location sounds are heard from.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"clear_current","fun":" void clear_current()"},{"name":"is_current","fun":"const bool is_current()"},{"name":"make_current","fun":" void make_current()"}],"signals":[]}

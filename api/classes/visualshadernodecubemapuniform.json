@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeCubeMapUniform","parent":"VisualShaderNodeTextureUniform","comment":"A [CubeMap] uniform node to be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

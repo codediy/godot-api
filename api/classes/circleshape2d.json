@@ -1,0 +1,1 @@
+{"name":"CircleShape2D","parent":"Shape2D","comment":"Circular shape for 2D collisions.","des":"","const":[],"enums":[],"props":[{"name":"radius","prop":"float radius  = 10.0","setget":"true"}],"setters":["set_radius(float value)"],"getters":["float get_radius()"],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"EditorNavigationMeshGenerator","parent":"Object","comment":"","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"bake","fun":" void bake(NavigationMesh nav_mesh,Node root_node)"},{"name":"clear","fun":" void clear(NavigationMesh nav_mesh)"}],"signals":[]}

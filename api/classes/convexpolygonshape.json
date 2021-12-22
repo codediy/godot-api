@@ -1,0 +1,1 @@
+{"name":"ConvexPolygonShape","parent":"Shape","comment":"Convex polygon shape for 3D physics.","des":"","const":[],"enums":[],"props":[{"name":"points","prop":"PoolVector3Array points  = PoolVector3Array(  )","setget":"true"}],"setters":["set_points(PoolVector3Array value)"],"getters":["PoolVector3Array get_points()"],"methods":[],"signals":[]}

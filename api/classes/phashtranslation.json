@@ -1,0 +1,1 @@
+{"name":"PHashTranslation","parent":"Translation","comment":"Optimized translation.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"generate","fun":" void generate(Translation from)"}],"signals":[]}

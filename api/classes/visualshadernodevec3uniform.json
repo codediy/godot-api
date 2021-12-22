@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVec3Uniform","parent":"VisualShaderNodeUniform","comment":"A [Vector3] uniform to be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

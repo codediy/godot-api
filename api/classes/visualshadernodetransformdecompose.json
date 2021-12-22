@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeTransformDecompose","parent":"VisualShaderNode","comment":"Decomposes a [Transform] into four [Vector3]s within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

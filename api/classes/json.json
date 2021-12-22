@@ -1,0 +1,1 @@
+{"name":"JSON","parent":"Object","comment":"Helper class for parsing JSON data.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"parse","fun":" JSONParseResult parse(String json)"},{"name":"print","fun":" String print(Variant value,String indent=&quot;&quot;,bool sort_keys=false)"}],"signals":[]}

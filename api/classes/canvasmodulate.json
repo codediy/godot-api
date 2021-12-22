@@ -1,0 +1,1 @@
+{"name":"CanvasModulate","parent":"Node2D","comment":"Tint the entire canvas.","des":"","const":[],"enums":[],"props":[{"name":"color","prop":"Color color  = Color( 1, 1, 1, 1 )","setget":"true"}],"setters":["set_color(Color value)"],"getters":["Color get_color()"],"methods":[],"signals":[]}

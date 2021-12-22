@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeScalarSmoothStep","parent":"VisualShaderNode","comment":"Calculates a scalar SmoothStep function within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"PlaneShape","parent":"Shape","comment":"Infinite plane shape for 3D collisions.","des":"","const":[],"enums":[],"props":[{"name":"plane","prop":"Plane plane  = Plane( 0, 1, 0, 0 )","setget":"true"}],"setters":["set_plane(Plane value)"],"getters":["Plane get_plane()"],"methods":[],"signals":[]}

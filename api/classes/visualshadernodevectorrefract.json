@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorRefract","parent":"VisualShaderNode","comment":"Returns the [Vector3] that points in the direction of refraction. For use within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

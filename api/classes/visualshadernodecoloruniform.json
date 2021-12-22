@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeColorUniform","parent":"VisualShaderNodeUniform","comment":"A [Color] uniform to be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

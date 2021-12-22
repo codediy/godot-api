@@ -1,0 +1,1 @@
+{"name":"SkinReference","parent":"Reference","comment":"","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"get_skeleton","fun":"const RID get_skeleton()"},{"name":"get_skin","fun":"const Skin get_skin()"}],"signals":[]}

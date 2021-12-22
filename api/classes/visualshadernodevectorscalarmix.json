@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorScalarMix","parent":"VisualShaderNode","comment":"Linearly interpolates between two vectors using a scalar. For use within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

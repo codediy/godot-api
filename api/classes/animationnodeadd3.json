@@ -1,0 +1,1 @@
+{"name":"AnimationNodeAdd3","parent":"AnimationNode","comment":"Blends two of three animations additively inside of an [AnimationNodeBlendTree].","des":"","const":[],"enums":[],"props":[{"name":"sync","prop":"bool sync  = false","setget":"true"}],"setters":["set_use_sync(bool value)"],"getters":["bool is_using_sync()"],"methods":[],"signals":[]}

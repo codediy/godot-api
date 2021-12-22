@@ -1,0 +1,1 @@
+{"name":"Shape","parent":"Resource","comment":"Base class for all 3D shape resources.","des":"","const":[],"enums":[],"props":[{"name":"margin","prop":"float margin  = 0.04","setget":"true"}],"setters":["set_margin(float value)"],"getters":["float get_margin()"],"methods":[{"name":"get_debug_mesh","fun":" ArrayMesh get_debug_mesh()"}],"signals":[]}

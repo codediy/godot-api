@@ -1,0 +1,1 @@
+{"name":"ProxyTexture","parent":"Texture","comment":"","des":"","const":[],"enums":[],"props":[{"name":"base","prop":"Texture base  ","setget":"true"},{"name":"flags","prop":"int flags  = 0","setget":"true"}],"setters":["set_base(Texture value)","set_flags(int value)"],"getters":["Texture get_base()","int get_flags()"],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorLen","parent":"VisualShaderNode","comment":"Returns the length of a [Vector3] within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

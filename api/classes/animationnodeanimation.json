@@ -1,0 +1,1 @@
+{"name":"AnimationNodeAnimation","parent":"AnimationRootNode","comment":"Input animation to use in an [AnimationNodeBlendTree].","des":"","const":[],"enums":[],"props":[{"name":"animation","prop":"String animation  = &quot;&quot;","setget":"true"}],"setters":["set_animation(String value)"],"getters":["String get_animation()"],"methods":[],"signals":[]}

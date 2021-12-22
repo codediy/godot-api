@@ -1,0 +1,1 @@
+{"name":"RoomGroup","parent":"Spatial","comment":"Groups [Room]s together to allow common functionality.","des":"","const":[],"enums":[],"props":[{"name":"roomgroup_priority","prop":"int roomgroup_priority  = 0","setget":"true"}],"setters":["set_roomgroup_priority(int value)"],"getters":["int get_roomgroup_priority()"],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorClamp","parent":"VisualShaderNode","comment":"Clamps a vector value within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

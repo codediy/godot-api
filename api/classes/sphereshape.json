@@ -1,0 +1,1 @@
+{"name":"SphereShape","parent":"Shape","comment":"Sphere shape for 3D collisions.","des":"","const":[],"enums":[],"props":[{"name":"radius","prop":"float radius  = 1.0","setget":"true"}],"setters":["set_radius(float value)"],"getters":["float get_radius()"],"methods":[],"signals":[]}

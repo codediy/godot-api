@@ -1,0 +1,1 @@
+{"name":"int","parent":"Top","comment":"Integer built-in type.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"int","fun":" int int(bool from)"},{"name":"int","fun":" int int(float from)"},{"name":"int","fun":" int int(String from)"}],"signals":[]}

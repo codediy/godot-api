@@ -1,0 +1,1 @@
+{"name":"JNISingleton","parent":"Object","comment":"Singleton that connects the engine with Android plugins to interface with native Android code.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"AudioEffectPanner","parent":"AudioEffect","comment":"Adds a panner audio effect to an Audio bus. Pans sound left or right.","des":"","const":[],"enums":[],"props":[{"name":"pan","prop":"float pan  = 0.0","setget":"true"}],"setters":["set_pan(float value)"],"getters":["float get_pan()"],"methods":[],"signals":[]}

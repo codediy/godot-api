@@ -1,0 +1,1 @@
+{"name":"OccluderShape","parent":"Resource","comment":"Base class for shapes used for occlusion culling by the [Occluder] node.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeUniformRef","parent":"VisualShaderNode","comment":"A reference to an existing [VisualShaderNodeUniform].","des":"","const":[],"enums":[],"props":[{"name":"uniform_name","prop":"String uniform_name  = &quot;[None]&quot;","setget":"true"}],"setters":["set_uniform_name(String value)"],"getters":["String get_uniform_name()"],"methods":[],"signals":[]}

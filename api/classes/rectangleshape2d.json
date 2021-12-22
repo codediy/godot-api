@@ -1,0 +1,1 @@
+{"name":"RectangleShape2D","parent":"Shape2D","comment":"Rectangle shape for 2D collisions.","des":"","const":[],"enums":[],"props":[{"name":"extents","prop":"Vector2 extents  = Vector2( 10, 10 )","setget":"true"}],"setters":["set_extents(Vector2 value)"],"getters":["Vector2 get_extents()"],"methods":[],"signals":[]}

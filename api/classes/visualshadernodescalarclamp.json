@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeScalarClamp","parent":"VisualShaderNode","comment":"Clamps a scalar value within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

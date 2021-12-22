@@ -1,0 +1,1 @@
+{"name":"BoxShape","parent":"Shape","comment":"Box shape resource.","des":"","const":[],"enums":[],"props":[{"name":"extents","prop":"Vector3 extents  = Vector3( 1, 1, 1 )","setget":"true"}],"setters":["set_extents(Vector3 value)"],"getters":["Vector3 get_extents()"],"methods":[],"signals":[]}

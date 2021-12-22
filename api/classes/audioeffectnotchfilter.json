@@ -1,0 +1,1 @@
+{"name":"AudioEffectNotchFilter","parent":"AudioEffectFilter","comment":"Adds a notch filter to the Audio bus.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

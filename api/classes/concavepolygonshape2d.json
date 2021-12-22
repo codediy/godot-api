@@ -1,0 +1,1 @@
+{"name":"ConcavePolygonShape2D","parent":"Shape2D","comment":"Concave polygon 2D shape resource for physics.","des":"","const":[],"enums":[],"props":[{"name":"segments","prop":"PoolVector2Array segments  = PoolVector2Array(  )","setget":"true"}],"setters":["set_segments(PoolVector2Array value)"],"getters":["PoolVector2Array get_segments()"],"methods":[],"signals":[]}

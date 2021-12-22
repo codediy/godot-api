@@ -1,0 +1,1 @@
+{"name":"MultiMeshInstance","parent":"GeometryInstance","comment":"Node that instances a [MultiMesh].","des":"","const":[],"enums":[],"props":[{"name":"multimesh","prop":"MultiMesh multimesh  ","setget":"true"}],"setters":["set_multimesh(MultiMesh value)"],"getters":["MultiMesh get_multimesh()"],"methods":[],"signals":[]}

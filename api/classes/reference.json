@@ -1,0 +1,1 @@
+{"name":"Reference","parent":"Object","comment":"Base class for reference-counted objects.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"init_ref","fun":" bool init_ref()"},{"name":"reference","fun":" bool reference()"},{"name":"unreference","fun":" bool unreference()"}],"signals":[]}

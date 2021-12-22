@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVec3Constant","parent":"VisualShaderNode","comment":"A [Vector3] constant to be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[{"name":"constant","prop":"Vector3 constant  = Vector3( 0, 0, 0 )","setget":"true"}],"setters":["set_constant(Vector3 value)"],"getters":["Vector3 get_constant()"],"methods":[],"signals":[]}

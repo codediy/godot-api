@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeTransformCompose","parent":"VisualShaderNode","comment":"Composes a [Transform] from four [Vector3]s within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

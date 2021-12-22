@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeGlobalExpression","parent":"VisualShaderNodeExpression","comment":"A custom global visual shader graph expression written in Godot Shading Language.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"AudioStream","parent":"Resource","comment":"Base class for audio streams.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"get_length","fun":"const float get_length()"}],"signals":[]}

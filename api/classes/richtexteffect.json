@@ -1,0 +1,1 @@
+{"name":"RichTextEffect","parent":"Resource","comment":"A custom effect for use with [RichTextLabel].","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"_process_custom_fx","fun":"virtual bool _process_custom_fx(CharFXTransform char_fx)"}],"signals":[]}

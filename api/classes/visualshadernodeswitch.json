@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeSwitch","parent":"VisualShaderNode","comment":"A boolean/vector function for use within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

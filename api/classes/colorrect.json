@@ -1,0 +1,1 @@
+{"name":"ColorRect","parent":"Control","comment":"Colored rectangle.","des":"","const":[],"enums":[],"props":[{"name":"color","prop":"Color color  = Color( 1, 1, 1, 1 )","setget":"true"}],"setters":["set_frame_color(Color value)"],"getters":["Color get_frame_color()"],"methods":[],"signals":[]}

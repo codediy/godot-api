@@ -1,0 +1,1 @@
+{"name":"ARVROrigin","parent":"Spatial","comment":"The origin point in AR/VR.","des":"","const":[],"enums":[],"props":[{"name":"world_scale","prop":"float world_scale  = 1.0","setget":"true"}],"setters":["set_world_scale(float value)"],"getters":["float get_world_scale()"],"methods":[],"signals":[]}

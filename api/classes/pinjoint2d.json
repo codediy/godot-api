@@ -1,0 +1,1 @@
+{"name":"PinJoint2D","parent":"Joint2D","comment":"Pin Joint for 2D shapes.","des":"","const":[],"enums":[],"props":[{"name":"softness","prop":"float softness  = 0.0","setget":"true"}],"setters":["set_softness(float value)"],"getters":["float get_softness()"],"methods":[],"signals":[]}

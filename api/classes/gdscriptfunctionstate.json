@@ -1,0 +1,1 @@
+{"name":"GDScriptFunctionState","parent":"Reference","comment":"State of a function call after yielding.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"is_valid","fun":"const bool is_valid(bool extended_check)"},{"name":"resume","fun":" Variant resume(Variant arg)"}],"signals":[{"name":"completed","fun":"completed(Variant result)"}]}

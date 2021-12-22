@@ -1,0 +1,1 @@
+{"name":"PanoramaSky","parent":"Sky","comment":"A type of [Sky] used to draw a background texture.","des":"","const":[],"enums":[],"props":[{"name":"panorama","prop":"Texture panorama  ","setget":"true"}],"setters":["set_panorama(Texture value)"],"getters":["Texture get_panorama()"],"methods":[],"signals":[]}

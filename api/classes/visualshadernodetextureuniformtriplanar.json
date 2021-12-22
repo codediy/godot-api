@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeTextureUniformTriplanar","parent":"VisualShaderNodeTextureUniform","comment":"Performs a uniform texture lookup with triplanar within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

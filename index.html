@@ -5,22 +5,137 @@
     <meta charset="UTF-8">
     <!-- import CSS -->
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .box-card {
+            margin-bottom: 15px;
+        }
+
+        .card-item {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+        .card-child-item {
+            font-size: 14px;
+            margin-left: 18px;
+        }
+
+        .link-text {
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
-        <el-row :gutter="20" style="height: 95vh;" >
-            <el-col :span="6" style="height: 100%;overflow-y: scroll;" v-loading="isLoad">
-                <el-input placeholder="输入关键字进行过滤" v-model="keyword">
-                </el-input>
-
-                <el-tree :data="data" :props="defaultProps" default-expand-all :filter-node-method="filterNode"
-                    @node-click="handleNodeClick" ref="tree"></el-tree>
+        <el-row :gutter="20" style="height: 95vh;">
+            <el-col :span="6" style="height: 100%;" v-loading="isLoad">
+                <el-row :gutter="20" style="height: 10%;">
+                    <el-row :gutter="20" style="height: 50%;">
+                        <el-col :span="5" style="text-align: center;">
+                            <el-tag>godot v3.4</el-tag>
+                        </el-col>
+                        <el-col :span="15" style="text-align: center;">
+                            <el-tag type="danger">
+                                <span>{{current ? current : "待选择"}}</span>
+                                <span v-if="hashType">->{{hashType}}</span>
+                                <span v-if="hashName">->{{hashName}}</span>
+                            </el-tag>
+                        </el-col>
+                    </el-row>
+                    <el-row :gutter="20" style="height:50%;padding: 0 5%;">
+                        <el-input placeholder="输入关键字进行过滤" v-model="keyword">
+                        </el-input>
+                    </el-row>
+                    <el-col :span="12" :offset="0"></el-col>
+                </el-row>
+                <el-row :gutter="20" style="height: 90%;overflow-y: scroll;padding-bottom: 3%;">
+                    <el-tree :data="data" :props="defaultProps" default-expand-all :filter-node-method="filterNode"
+                        @node-click="handleNodeClick" ref="tree"></el-tree>
+                </el-row>
             </el-col>
             <el-col :span="18" style="height: 100%;">
-                <el-row style="height: 100%;width: 100%;" v-loading="loading">
-                    <iframe id="ifm" :src="url" frameborder="0" style="height: 100%;width: 100%;"></iframe>
+                <el-row :gutter="20">
+                    <el-col :span="11">
+                        <el-button style="width: 100%;" :type="isType('apijson')" @click="toggleApi('apijson')">api数据
+                        </el-button>
+                    </el-col>
+                    <el-col :span="11">
+                        <el-button style="width: 100%;" :type="isType('apihtml')" @click="toggleApi('apihtml')">api详情
+                        </el-button>
+                    </el-col>
                 </el-row>
+
+                <el-row v-if="apiType == 'apijson'" style="height: 95%;width: 100%;overflow-y: scroll;">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>{{classData.name}}</span>:
+                            <span class="link-text" @click="jsonUrl(classData.parent)">{{classData.parent}}</a>
+                        </div>
+                        <div class="card-item">
+                            {{classData.comment}}
+                        </div>
+                    </el-card>
+                    <el-card class="box-card" v-if="isClassData && classData.const.length > 0">
+                        <div slot="header" class="clearfix">
+                            <span>常量</span>
+                        </div>
+                        <div v-for="cItem in classData.const" class="card-item">
+                            <span class="link-text">{{cItem.name}}</span>
+                            <div class="card-child-item">
+                                {{cItem.value}}
+                            </div>
+                        </div>
+                    </el-card>
+                    <el-card class="box-card" v-if="isClassData && classData.enums.length > 0">
+                        <div slot="header" class="clearfix">
+                            <span>枚举</span>
+                        </div>
+                        <div v-for="eItem in classData.enums" class="card-item">
+                            <span class="link-text" @click="jsonTypeUrl(eItem.name,'e')">{{eItem.name}}</span>
+                            <div v-for="eItemValue in eItem.value" class="card-child-item">
+                                {{eItemValue.key}}
+                            </div>
+                        </div>
+                    </el-card>
+                    <el-card class="box-card" v-if="isClassData && classData.props.length > 0">
+                        <div slot="header" class="clearfix">
+                            <span>属性</span>
+                        </div>
+                        <div v-for="pItem in classData.props" class="card-item">
+                            <span class="link-text" @click="jsonTypeUrl(pItem.name,'p')">{{pItem.name}}</span>
+                            <div class="card-child-item">
+                                {{pItem.prop}}
+                            </div>
+                        </div>
+                    </el-card>
+                    <el-card class="box-card"  v-if="isClassData && classData.signals.length > 0">
+                        <div slot="header" class="clearfix">
+                            <span>信号</span>
+                        </div>
+                        <div v-for="sItem in classData.signals" class="card-item">
+                            <span class="link-text" @click="jsonTypeUrl(sItem.name,'s')">{{sItem.name}}</span>
+                            <div class="card-child-item">
+                                {{sItem.fun}}
+                            </div>
+                        </div>
+                    </el-card>
+                    <el-card class="box-card"  v-if="isClassData && classData.methods.length > 0">
+                        <div slot="header" class="clearfix">
+                            <span>函数</span>
+                        </div>
+                        <div v-for="mItem in classData.methods" class="card-item">
+                            <span class="link-text" @click="jsonTypeUrl(mItem.name,'m')">{{mItem.name}}</span>
+                            <div class="card-child-item">
+                                {{mItem.fun}}
+                            </div>
+                        </div>
+                    </el-card>
+                </el-row>
+
+                <el-row v-if="apiType == 'apihtml' " style="height: 95%;width: 100%;overflow-y: scroll;" >
+                    <iframe ref="iframe" id="ifm" :src="url" frameborder="0" style="height: 100%;width: 100%;"></iframe>
+                </el-row>
+
             </el-col>
         </el-row>
     </div>
@@ -36,11 +151,18 @@
             data() {
                 return {
                     isLoad: true,
+                    isClassData: false,
                     loading: true,
                     keyword: "",
                     current: "",
                     baseUrl: "./classes/class_$.html",
+                    iframeUrl:"./classes/index.html",
+                    hashText:"#",
+                    hashType:"",
+                    hashName:"",
                     data: [],
+                    classData: {},
+                    apiType: "apijson", // apijson | apihtml
                     defaultProps: {
                         children: 'children',
                         label: 'id'
@@ -49,11 +171,7 @@
             },
             computed: {
                 url() {
-                    if (this.current) {
-                        return this.baseUrl.replace("$", this.current.toLocaleLowerCase());
-                    } else {
-                        return "./classes/index.html";
-                    }
+                    return this.iframeUrl +"#"+ this.hashText
                 }
             },
             watch: {
@@ -78,6 +196,24 @@
                 });
             },
             methods: {
+                loadApi() {
+                    fetch("./api/ele-tree.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            this.data = data;
+                            this.isLoad = false;
+                        });
+                },
+                loadClass() {
+                    this.isClassData = false;
+                    let classJson = this.current.toLocaleLowerCase();
+                    fetch(`./api/classes/${classJson}.json`)
+                        .then(response => response.json())
+                        .then(data => {
+                            this.classData = data;
+                            this.isClassData = true;
+                        });
+                },
                 filterNode(value, data) {
                     if (!value) return true;
                     return data.id.toLocaleLowerCase()
@@ -85,13 +221,57 @@
                 },
                 handleNodeClick(data) {
                     if (this.current !== data.id) {
-                        this.current = data.id;
-                        this.loading = true;
+                        this.changeCurrent(data.id);
                     }
+                },
+                changeCurrent(className) {
+                    this.current = className;
+                    this.iframeUrl = this.baseUrl.replace("$", this.current.toLocaleLowerCase());
+
+                    this.hashText = "";
+                    this.hashType = "";
+                    this.hashName = "";
+
+                    this.loading = true;
+                    // 加载class数据
+                    this.loadClass();
                 },
                 stateChange() {
                     this.loading = false;
                 },
+                toggleApi(apiType) {
+                    this.apiType = apiType;
+                },
+                isType(apiType) {
+                    return this.apiType == apiType ? "primary" : ""
+                },
+                jsonUrl(className) {
+                    if (className == "Top") {
+                        return "#";
+                    }
+                    this.changeCurrent(className);
+                },
+                jsonTypeUrl(name,type="property"){
+                    // class-className
+                    // properties | methods | enumerations
+                    // property |  method |  enum  | signal | 
+                    let hashText = "#";
+                    if(type == "p"){
+                        hashText = `class-${this.current.toLocaleLowerCase()}-property-${name.replace(/_/g,'-')}`;
+                    }else if(type == "m"){
+                        hashText = `class-${this.current.toLocaleLowerCase()}-method-${name.replace(/_/g,'-')}`;
+                    }else if(type == "e"){
+                        hashText = `enum-${name.replace('_','-')}`;
+                    }else if(type == "s"){
+                        hashText = `class-${this.current.toLocaleLowerCase()}-signal-${name.replace(/_/g,'-')}`;
+                    }
+
+                    this.hashText = hashText;
+                    this.hashType = type;
+                    this.hashName = name;
+
+                    this.apiType = "apihtml";
+                }
             }
         };
 

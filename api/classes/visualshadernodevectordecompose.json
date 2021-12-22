@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorDecompose","parent":"VisualShaderNode","comment":"Decomposes a [Vector3] into three scalars within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

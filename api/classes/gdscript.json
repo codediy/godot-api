@@ -1,0 +1,1 @@
+{"name":"GDScript","parent":"Script","comment":"A script implemented in the GDScript programming language.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"get_as_byte_code","fun":"const PoolByteArray get_as_byte_code()"},{"name":"new","fun":"vararg Variant new()"}],"signals":[]}

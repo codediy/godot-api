@@ -1,0 +1,1 @@
+{"name":"EditorScriptPicker","parent":"EditorResourcePicker","comment":"Godot editor's control for selecting the [code]script[/code] property of a [Node].","des":"","const":[],"enums":[],"props":[{"name":"script_owner","prop":"Node script_owner  ","setget":"true"}],"setters":["set_script_owner(Node value)"],"getters":["Node get_script_owner()"],"methods":[],"signals":[]}

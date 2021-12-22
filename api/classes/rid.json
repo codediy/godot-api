@@ -1,0 +1,1 @@
+{"name":"RID","parent":"Top","comment":"Handle for a [Resource]'s unique ID.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"RID","fun":" RID RID(Object from)"},{"name":"get_id","fun":" int get_id()"}],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"Path","parent":"Spatial","comment":"Contains a [Curve3D] path for [PathFollow] nodes to follow.","des":"","const":[],"enums":[],"props":[{"name":"curve","prop":"Curve3D curve  ","setget":"true"}],"setters":["set_curve(Curve3D value)"],"getters":["Curve3D get_curve()"],"methods":[],"signals":[{"name":"curve_changed","fun":"curve_changed()"}]}

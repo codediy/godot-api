@@ -1,0 +1,1 @@
+{"name":"CenterContainer","parent":"Container","comment":"Keeps children controls centered.","des":"","const":[],"enums":[],"props":[{"name":"use_top_left","prop":"bool use_top_left  = false","setget":"true"}],"setters":["set_use_top_left(bool value)"],"getters":["bool is_using_top_left()"],"methods":[],"signals":[]}

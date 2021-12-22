@@ -1,0 +1,1 @@
+{"name":"PackedDataContainerRef","parent":"Reference","comment":"Reference version of [PackedDataContainer].","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"size","fun":"const int size()"}],"signals":[]}

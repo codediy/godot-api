@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeBooleanConstant","parent":"VisualShaderNode","comment":"A boolean constant to be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[{"name":"constant","prop":"bool constant  = false","setget":"true"}],"setters":["set_constant(bool value)"],"getters":["bool get_constant()"],"methods":[],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"bool","parent":"Top","comment":"Boolean built-in type.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"bool","fun":" bool bool(int from)"},{"name":"bool","fun":" bool bool(float from)"},{"name":"bool","fun":" bool bool(String from)"}],"signals":[]}

@@ -1,0 +1,1 @@
+{"name":"CurveTexture","parent":"Texture","comment":"A texture that shows a curve.","des":"","const":[],"enums":[],"props":[{"name":"curve","prop":"Curve curve  ","setget":"true"},{"name":"width","prop":"int width  = 2048","setget":"true"}],"setters":["set_curve(Curve value)","set_width(int value)"],"getters":["Curve get_curve()","int get_width()"],"methods":[],"signals":[]}

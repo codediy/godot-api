@@ -1,0 +1,1 @@
+{"name":"AudioEffectHighPassFilter","parent":"AudioEffectFilter","comment":"Adds a high-pass filter to the Audio Bus.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

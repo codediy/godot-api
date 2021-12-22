@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorCompose","parent":"VisualShaderNode","comment":"Composes a [Vector3] from three scalars within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

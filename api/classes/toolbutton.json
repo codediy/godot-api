@@ -1,0 +1,1 @@
+{"name":"ToolButton","parent":"Button","comment":"Flat button helper class.","des":"","const":[],"enums":[],"props":[{"name":"flat","prop":"bool flat  = true","setget":"true"}],"setters":["set_flat(bool value)"],"getters":["bool is_flat()"],"methods":[],"signals":[]}

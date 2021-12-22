@@ -1,0 +1,1 @@
+{"name":"AudioEffectBandLimitFilter","parent":"AudioEffectFilter","comment":"Adds a band limit filter to the audio bus.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

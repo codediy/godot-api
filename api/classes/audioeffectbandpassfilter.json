@@ -1,0 +1,1 @@
+{"name":"AudioEffectBandPassFilter","parent":"AudioEffectFilter","comment":"Adds a band pass filter to the audio bus.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

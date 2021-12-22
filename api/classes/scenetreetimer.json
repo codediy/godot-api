@@ -1,0 +1,1 @@
+{"name":"SceneTreeTimer","parent":"Reference","comment":"One-shot timer.","des":"","const":[],"enums":[],"props":[{"name":"time_left","prop":"float time_left  ","setget":"true"}],"setters":["set_time_left(float value)"],"getters":["float get_time_left()"],"methods":[],"signals":[{"name":"timeout","fun":"timeout()"}]}

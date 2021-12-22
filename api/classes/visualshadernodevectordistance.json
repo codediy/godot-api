@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorDistance","parent":"VisualShaderNode","comment":"Returns the distance between two points. To be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

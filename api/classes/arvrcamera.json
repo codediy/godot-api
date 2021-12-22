@@ -1,0 +1,1 @@
+{"name":"ARVRCamera","parent":"Camera","comment":"A camera node with a few overrules for AR/VR applied, such as location tracking.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

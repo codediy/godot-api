@@ -1,0 +1,1 @@
+{"name":"ResourceImporter","parent":"Reference","comment":"Base class for the implementation of core resource importers.","des":"","const":[],"enums":[{"name":"ImportOrder","value":[{"key":"IMPORT_ORDER_DEFAULT = 0"},{"key":"IMPORT_ORDER_SCENE = 100"}]}],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

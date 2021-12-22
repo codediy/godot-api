@@ -1,0 +1,1 @@
+{"name":"TextureArray","parent":"TextureLayered","comment":"Array of textures stored in a single primitive.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"create","fun":" void create(int width,int height,int depth,Image.Format format,int flags=7)"}],"signals":[]}

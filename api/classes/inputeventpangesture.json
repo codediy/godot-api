@@ -1,0 +1,1 @@
+{"name":"InputEventPanGesture","parent":"InputEventGesture","comment":"","des":"","const":[],"enums":[],"props":[{"name":"delta","prop":"Vector2 delta  = Vector2( 0, 0 )","setget":"true"}],"setters":["set_delta(Vector2 value)"],"getters":["Vector2 get_delta()"],"methods":[],"signals":[]}

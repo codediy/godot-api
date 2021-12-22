@@ -1,0 +1,1 @@
+{"name":"YSort","parent":"Node2D","comment":"Sort all child nodes based on their Y positions.","des":"","const":[],"enums":[],"props":[{"name":"sort_enabled","prop":"bool sort_enabled  = true","setget":"true"}],"setters":["set_sort_enabled(bool value)"],"getters":["bool is_sort_enabled()"],"methods":[],"signals":[]}

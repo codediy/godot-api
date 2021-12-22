@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeVectorInterp","parent":"VisualShaderNode","comment":"Linearly interpolates between two vectors within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

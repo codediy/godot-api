@@ -1,0 +1,1 @@
+{"name":"JavaClassWrapper","parent":"Object","comment":"","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"wrap","fun":" JavaClass wrap(String name)"}],"signals":[]}

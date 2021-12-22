@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeScalarInterp","parent":"VisualShaderNode","comment":"Linearly interpolates between two scalars within the visual shader graph.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

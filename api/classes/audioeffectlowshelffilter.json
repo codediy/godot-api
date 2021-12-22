@@ -1,0 +1,1 @@
+{"name":"AudioEffectLowShelfFilter","parent":"AudioEffectFilter","comment":"Reduces all frequencies below the [member AudioEffectFilter.cutoff_hz].","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[],"signals":[]}

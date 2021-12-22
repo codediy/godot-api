@@ -1,0 +1,1 @@
+{"name":"EditorResourceConversionPlugin","parent":"Reference","comment":"","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"_convert","fun":"virtual Resource _convert(Resource resource)"},{"name":"_converts_to","fun":"virtual String _converts_to()"}],"signals":[]}

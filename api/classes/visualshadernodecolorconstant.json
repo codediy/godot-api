@@ -1,0 +1,1 @@
+{"name":"VisualShaderNodeColorConstant","parent":"VisualShaderNode","comment":"A [Color] constant to be used within the visual shader graph.","des":"","const":[],"enums":[],"props":[{"name":"constant","prop":"Color constant  = Color( 1, 1, 1, 1 )","setget":"true"}],"setters":["set_constant(Color value)"],"getters":["Color get_constant()"],"methods":[],"signals":[]}

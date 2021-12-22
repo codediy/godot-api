@@ -1,0 +1,1 @@
+{"name":"InputEventMagnifyGesture","parent":"InputEventGesture","comment":"","des":"","const":[],"enums":[],"props":[{"name":"factor","prop":"float factor  = 1.0","setget":"true"}],"setters":["set_factor(float value)"],"getters":["float get_factor()"],"methods":[],"signals":[]}

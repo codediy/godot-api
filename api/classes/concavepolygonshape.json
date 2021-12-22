@@ -1,0 +1,1 @@
+{"name":"ConcavePolygonShape","parent":"Shape","comment":"Concave polygon shape.","des":"","const":[],"enums":[],"props":[],"setters":[],"getters":[],"methods":[{"name":"get_faces","fun":"const PoolVector3Array get_faces()"},{"name":"set_faces","fun":" void set_faces(PoolVector3Array faces)"}],"signals":[]}
