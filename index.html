@@ -18,8 +18,8 @@
                     @node-click="handleNodeClick" ref="tree"></el-tree>
             </el-col>
             <el-col :span="18" style="height: 100%;">
-                <el-row style="height: 100%;width: 100%;">
-                    <iframe :src="url" frameborder="0" style="height: 100%;width: 100%;"></iframe>
+                <el-row style="height: 100%;width: 100%;" v-loading="loading">
+                    <iframe id="ifm" :src="url" frameborder="0" style="height: 100%;width: 100%;"></iframe>
                 </el-row>
             </el-col>
         </el-row>
@@ -29,7 +29,7 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- import JavaScript -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-
+<script src="https://unpkg.com/jquery@3.6.0/dist/jquery.js"></script>
 <script>
     function initVue() {
         let option = {
@@ -72,6 +72,10 @@
 
             },
             mounted() {
+                const that = this;
+                $("#ifm").on("load", function () {
+                    that.stateChange();
+                });
             },
             methods: {
                 filterNode(value, data) {
@@ -84,7 +88,10 @@
                         this.current = data.id;
                         this.loading = true;
                     }
-                }
+                },
+                stateChange() {
+                    this.loading = false;
+                },
             }
         };
 
