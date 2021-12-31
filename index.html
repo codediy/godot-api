@@ -14,6 +14,7 @@
             font-size: 14px;
             margin-bottom: 18px;
         }
+
         .card-child-item {
             font-size: 14px;
             margin-left: 18px;
@@ -112,7 +113,7 @@
                             </div>
                         </div>
                     </el-card>
-                    <el-card class="box-card"  v-if="isClassData && classData.signals.length > 0">
+                    <el-card class="box-card" v-if="isClassData && classData.signals.length > 0">
                         <div slot="header" class="clearfix">
                             <span>信号</span>
                         </div>
@@ -123,7 +124,7 @@
                             </div>
                         </div>
                     </el-card>
-                    <el-card class="box-card"  v-if="isClassData && classData.methods.length > 0">
+                    <el-card class="box-card" v-if="isClassData && classData.methods.length > 0">
                         <div slot="header" class="clearfix">
                             <span>函数</span>
                         </div>
@@ -136,7 +137,7 @@
                     </el-card>
                 </el-row>
 
-                <el-row v-if="apiType == 'apihtml' " style="height: 95%;width: 100%;overflow-y: scroll;" >
+                <el-row v-if="apiType == 'apihtml' " style="height: 95%;width: 100%;overflow-y: scroll;">
                     <iframe ref="iframe" id="ifm" :src="url" frameborder="0" style="height: 100%;width: 100%;"></iframe>
                 </el-row>
 
@@ -160,10 +161,10 @@
                     keyword: "",
                     current: "",
                     baseUrl: "/classes/class_$.html",
-                    iframeUrl:"/classes/index.html",
-                    hashText:"#",
-                    hashType:"",
-                    hashName:"",
+                    iframeUrl: "/classes/index.html",
+                    hashText: "#",
+                    hashType: "",
+                    hashName: "",
                     data: [],
                     classData: {},
                     apiType: "apijson", // apijson | apihtml
@@ -175,7 +176,7 @@
             },
             computed: {
                 url() {
-                    return this.iframeUrl +"#"+ this.hashText
+                    return this.iframeUrl + "#" + this.hashText
                 }
             },
             watch: {
@@ -246,10 +247,10 @@
                 toggleApi(apiType) {
                     this.apiType = apiType;
                 },
-                gotoApi(){
+                gotoApi() {
                     this.apiType = "apihtml";
                     console.log(this.url);
-                    let url = "https://docs.godotengine.org/zh_CN/latest"+this.url;
+                    let url = "https://docs.godotengine.org/zh_CN/latest" + this.url;
                     window.open(url);
                 },
                 isType(apiType) {
@@ -261,19 +262,19 @@
                     }
                     this.changeCurrent(className);
                 },
-                jsonTypeUrl(name,type="property"){
+                jsonTypeUrl(name, type = "property") {
                     // class-className
                     // properties | methods | enumerations
                     // property |  method |  enum  | signal | 
                     let hashText = "#";
-                    if(type == "p"){
-                        hashText = `class-${this.current.toLocaleLowerCase()}-property-${name.replace(/_/g,'-')}`;
-                    }else if(type == "m"){
-                        hashText = `class-${this.current.toLocaleLowerCase()}-method-${name.replace(/_/g,'-')}`;
-                    }else if(type == "e"){
-                        hashText = `enum-${name.replace('_','-')}`;
-                    }else if(type == "s"){
-                        hashText = `class-${this.current.toLocaleLowerCase()}-signal-${name.replace(/_/g,'-')}`;
+                    if (type == "p") {
+                        hashText = `class-${this.current.toLocaleLowerCase()}-property-${name.replace(/_/g, '-')}`;
+                    } else if (type == "m") {
+                        hashText = `class-${this.current.toLocaleLowerCase()}-method-${name.replace(/_/g, '-')}`;
+                    } else if (type == "e") {
+                        hashText = `enum-${name.replace('_', '-')}`;
+                    } else if (type == "s") {
+                        hashText = `class-${this.current.toLocaleLowerCase()}-signal-${name.replace(/_/g, '-')}`;
                     }
 
                     this.hashText = hashText;
