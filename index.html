@@ -55,12 +55,16 @@
             </el-col>
             <el-col :span="18" style="height: 100%;">
                 <el-row :gutter="20">
-                    <el-col :span="11">
+                    <el-col :span="8">
                         <el-button style="width: 100%;" :type="isType('apijson')" @click="toggleApi('apijson')">api数据
                         </el-button>
                     </el-col>
-                    <el-col :span="11">
+                    <el-col :span="8">
                         <el-button style="width: 100%;" :type="isType('apihtml')" @click="toggleApi('apihtml')">api详情
+                        </el-button>
+                    </el-col>
+                    <el-col :span="8">
+                        <el-button style="width: 100%;" @click="gotoApi()">api详情(官方中文)
                         </el-button>
                     </el-col>
                 </el-row>
@@ -155,8 +159,8 @@
                     loading: true,
                     keyword: "",
                     current: "",
-                    baseUrl: "./classes/class_$.html",
-                    iframeUrl:"./classes/index.html",
+                    baseUrl: "/classes/class_$.html",
+                    iframeUrl:"/classes/index.html",
                     hashText:"#",
                     hashType:"",
                     hashName:"",
@@ -241,6 +245,12 @@
                 },
                 toggleApi(apiType) {
                     this.apiType = apiType;
+                },
+                gotoApi(){
+                    this.apiType = "apihtml";
+                    console.log(this.url);
+                    let url = "https://docs.godotengine.org/zh_CN/latest"+this.url;
+                    window.open(url);
                 },
                 isType(apiType) {
                     return this.apiType == apiType ? "primary" : ""
