@@ -161,7 +161,9 @@
                     loading: true,
                     keyword: "",
                     current: "",
-                    baseUrl: "https://docs.godotengine.org/en/stable/classes/class_$.html",
+                    docUrl: "https://docs.godotengine.org/en/stable/",
+                    zhUrl:"https://docs.godotengine.org/zh_CN/latest/",
+                    baseUrl: "/classes/class_$.html",
                     iframeUrl: "/classes/index.html",
                     hashText: "#",
                     hashType: "",
@@ -177,7 +179,10 @@
             },
             computed: {
                 url() {
-                    return this.iframeUrl + "#" + this.hashText
+                    return this.docUrl + this.iframeUrl + "#" + this.hashText
+                },
+                zhUrl(){
+                    return this.zhUrl + this.iframeUrl + "#" + this.hashText
                 }
             },
             watch: {
@@ -251,8 +256,8 @@
                 gotoApi() {
                     this.apiType = "apihtml";
                     console.log(this.url);
-                    let url = "https://docs.godotengine.org/zh_CN/latest" + this.url;
-                    window.open(url);
+                    // 中文链接
+                    window.open(this.zhUrl);
                 },
                 isType(apiType) {
                     return this.apiType == apiType ? "primary" : ""
