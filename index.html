@@ -65,7 +65,7 @@
                         </el-button>
                     </el-col>
                     <el-col :span="8">
-                        <el-button style="width: 100%;" @click="gotoApi()">api详情(官方中文)
+                        <el-button style="width: 100%;" :type="isType('apizh')" @click="toggleApi('apizh')">api详情(官方中文)
                         </el-button>
                     </el-col>
                 </el-row>
@@ -138,8 +138,9 @@
                 </el-row>
 
 
-                <el-row v-if="apiType == 'apihtml' " style="height: 95%;width: 100%;overflow-y: scroll;">
-                    <iframe ref="iframe" id="ifm" :src="url" frameborder="0" style="height: 100%;width: 100%;"></iframe>
+                <el-row v-if="apiType == 'apihtml' || apiType == 'apizh' "
+                    style="height: 95%;width: 100%;overflow-y: scroll;">
+                    <iframe ref="iframe" id="ifm" :src="url" frameborder="0" style="height: 100%;width: 100%;" @load="frameLoaded"></iframe >
                 </el-row>
 
             </el-col>
@@ -156,13 +157,14 @@
         let option = {
             data() {
                 return {
+                    frameLoading:false,
                     isLoad: true,
                     isClassData: false,
                     loading: true,
                     keyword: "",
                     current: "",
                     docUrl: "https://docs.godotengine.org/en/stable/",
-                    zhUrl:"https://docs.godotengine.org/zh_CN/latest/",
+                    zhUrl: "https://docs.godotengine.org/zh_CN/latest/",
                     baseUrl: "/classes/class_$.html",
                     iframeUrl: "/classes/index.html",
                     hashText: "#",
@@ -179,9 +181,10 @@
             },
             computed: {
                 url() {
-                    return this.docUrl + this.iframeUrl + "#" + this.hashText
+                    let baseUrl = this.apiType == "apizh" ? this.zhUrl : this.docUrl
+                    return baseUrl + this.iframeUrl + "#" + this.hashText
                 },
-                urlZh(){
+                urlZh() {
                     return this.zhUrl + this.iframeUrl + "#" + this.hashText
                 }
             },
@@ -252,6 +255,9 @@
                 },
                 toggleApi(apiType) {
                     this.apiType = apiType;
+                    if(apiType == "apihtml" || apiType == "apizh"){
+                        this.frameLoading = true;
+                    }
                 },
                 gotoApi() {
                     this.apiType = "apihtml";
@@ -288,6 +294,10 @@
                     this.hashName = name;
 
                     this.apiType = "apihtml";
+                },
+                frameLoaded(){
+                    console.log("frame loaded")
+                    this.frameLoading = false;
                 }
             }
         };
